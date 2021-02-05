@@ -30,7 +30,7 @@ public class CustomerController {
 
     @PostMapping("/add-customer")
     public void addNewCustomerToDatabase(@RequestBody Customer customer) {
-        
+
     }
 
 
