@@ -15,3 +15,34 @@
 .skyPondLogo{
     width: 15%;
 }
+
+@media only screen and (max-width: 767px) {
+
+    .homePage {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .homePage_title {
+        font-size: 2rem;
+        margin-top: .75rem;
+    }
+
+
+    .skyPondLogo {
+        width: 35%;
+    }
+
+    @media only screen and (max-width: 335px) {
+
+        .homePage_title {
+            font-size: 1.5rem;
+            margin-top: .75rem;
+        }
+
+
+        .skyPondLogo {
+            width: 35%;
+        }
+    }
+}
