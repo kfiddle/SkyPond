@@ -1,0 +1,7 @@
+.skyPondLogo{
+    position: fixed;
+    width: 25vh;
+    z-index: 0;
+    bottom: 7.5vh;
+    right: 0vw;
+}
