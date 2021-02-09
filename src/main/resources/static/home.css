@@ -1,14 +1,17 @@
-.homePageTitle{
+.homePage{
+    align-items: center;
+    bottom: 3vh;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.homePage_title{
     color: #fff;
     font-size: 4rem;
     font-weight: 300;
-    margin-top: 25rem;
 }
 
 .skyPondLogo{
-    bottom: 1vh;
-    position: fixed;
-    right: 5vw;
     width: 15%;
-    z-index: 0;
 }
