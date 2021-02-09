@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #666;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#headerLogo{
+    margin-left: 3rem;
+    color: #fff;
+
+}
+
+.headerNav_list{
+    display: flex;
+}
+
+.headerNav_listItem{
+    list-style-type: none;
+    margin: 1rem;
+}
+
+.headerNav_listItem:hover{
+    background-color: #999;
+    border: 1px solid #666;
+}
+
+
+
+
