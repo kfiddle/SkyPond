@@ -1,11 +1,14 @@
 .homePageTitle{
-    font-size: 3rem;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 300;
+    margin-top: 25rem;
 }
 
 .skyPondLogo{
+    bottom: 1vh;
     position: fixed;
-    width: 25vh;
+    right: 5vw;
+    width: 15%;
     z-index: 0;
-    bottom: 7.5vh;
-    right: 0vw;
 }
