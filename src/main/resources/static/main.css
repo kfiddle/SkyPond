@@ -17,7 +17,7 @@ html{
     z-index: -1;
     min-width: 100vw;
     min-height: 100vh;
-    background-image: url("/images/skyPond_artwork.jpg");
+    background-image: url("/skyPond_artwork.jpg");
     background-size: cover;
 }
 
