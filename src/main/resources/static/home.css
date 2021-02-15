@@ -16,6 +16,15 @@
     width: 15%;
 }
 
+#bird {
+    position:absolute;
+    width: 5%;
+    height: 49%;
+    left: 9.8%;
+    bottom: 43%;
+
+}
+
 @media only screen and (max-width: 767px) {
 
     .homePage {
@@ -32,6 +41,8 @@
     .skyPondLogo {
         width: 35%;
     }
+
+
 
     @media only screen and (max-width: 335px) {
 
