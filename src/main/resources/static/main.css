@@ -12,20 +12,12 @@ html{
     font-family: 'Quicksand', sans-serif;
 }
 
-#bgImage{
-    position: fixed;
-    top: 0;
-    z-index: -1;
-    min-width: 100vw;
-    min-height: 100vh;
-    background-image: url(/skyPond_artwork.jpg);
-    background-size: cover;
-}
 
-#container{
-    margin: 15vh auto;
-    max-width: 60rem;
-    width: 90%;
-    padding-top: 1rem;
 
-}
+/*#container{*/
+/*    margin: 0 auto;*/
+/*    max-width: 60rem;*/
+/*    width: 90%;*/
+/*    padding-top: 1rem;*/
+
+/*}*/
