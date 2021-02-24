@@ -42,7 +42,4 @@ public class CustomerController {
     public String getContactForm(){
         return "contactForm";
     }
-    
-
-
 }
