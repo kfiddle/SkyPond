@@ -38,4 +38,11 @@ public class CustomerController {
         return "home";
     }
 
+    @RequestMapping("/contact")
+    public String getContactForm(){
+        return "contactForm";
+    }
+    
+
+
 }
