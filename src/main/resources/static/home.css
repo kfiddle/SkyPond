@@ -20,18 +20,23 @@
     opacity: 0.4;
 }
 
-body{
-    margin-top:100%;
 
-}
-
-
-.homePage {
+.homePageMobileOnly {
     display:flex;
     flex-direction: column;
     align-items: center;
 }
 
+
+.homePage{
+    align-items: center;
+    bottom: 3vh;
+    display: flex;
+    left: 5%;
+    position: fixed;
+
+
+}
 
 .homePage_title {
     color: #d1d1ab;
