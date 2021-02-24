@@ -8,17 +8,17 @@
 
 .headerContents{
     margin: 0 auto;
-    max-width: 70rem;
+    max-width: 60rem;
     width: 100%;
 }
 
 .identity{
     align-items: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     /* grid-template-columns: 1fr 4fr; */
     /* grid-column-gap: 1.5rem; */
-    margin-top: 2rem;
+    margin-top: 1.25rem;
 }
 
 .headerLogo{
