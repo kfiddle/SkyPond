@@ -14,10 +14,8 @@ html{
 
 
 
-/*#container{*/
-/*    margin: 0 auto;*/
-/*    max-width: 60rem;*/
-/*    width: 90%;*/
-/*    padding-top: 1rem;*/
-
-/*}*/
+#container{
+    margin: 0 auto;
+    max-width: 70rem;
+    width: 100%;
+}
