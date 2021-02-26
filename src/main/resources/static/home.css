@@ -36,7 +36,7 @@
     justify-content: space-evenly;
     /* grid-template-columns: 1fr 4fr; */
     /* grid-column-gap: 1.5rem; */
-    margin-top: 25rem;
+    margin-top: 30rem;
 }
 
 .homePage_title {
@@ -49,9 +49,16 @@
     width: 15vw;
 }
 
+.homePageMobileOnly {
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @media screen and (max-width: 795px){
 
-    .homePageMobileOnly {
+    .homePage {
         display:flex;
         flex-direction: column;
         align-items: center;
