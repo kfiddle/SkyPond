@@ -59,4 +59,12 @@
 
 }
 
+@media screen and (min-width: 1598px) {
+    .homePage_title{
+        font-size: 5rem;
+    }
+}
+
+
+
 
