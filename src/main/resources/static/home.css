@@ -1,48 +1,62 @@
-.homePage{
-    align-items: center;
-    bottom: 3vh;
-    display: flex;
-    justify-content: space-between;
+#bgImage {
     position: fixed;
+    top: 0;
+    z-index: -2;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url(/skyPond_artwork.jpg);
+    background-size: cover;
 }
 
-.homePage_title{
-    color: #fff;
-    font-size: 4rem;
+/*.tint{*/
+/*    z-index: -1;*/
+/*}*/
+
+.tint:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #3D441E;
+    opacity: 0.49;
+    z-index: -1;
+}
+
+#homePage_container{
+    margin: 0 auto;
+    max-width: 70rem;
+    width: 100%;
+}
+
+.homePage {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    /* grid-template-columns: 1fr 4fr; */
+    /* grid-column-gap: 1.5rem; */
+    margin-top: 25rem;
+}
+
+.homePage_title {
+    color: #d1d1ab;
+    font-size: 6vw;
     font-weight: 300;
 }
 
-.skyPondLogo{
-    width: 15%;
+.skyPondLogo {
+    width: 15vw;
 }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 795px){
 
-    .homePage {
-        display: flex;
+    .homePageMobileOnly {
+        display:flex;
         flex-direction: column;
+        align-items: center;
     }
 
-    .homePage_title {
-        font-size: 2rem;
-        margin-top: .75rem;
-    }
-
-
-    .skyPondLogo {
-        width: 35%;
-    }
-
-    @media only screen and (max-width: 335px) {
-
-        .homePage_title {
-            font-size: 1.5rem;
-            margin-top: .75rem;
-        }
-
-
-        .skyPondLogo {
-            width: 35%;
-        }
-    }
 }
+
+
