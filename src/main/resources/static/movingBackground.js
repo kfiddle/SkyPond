@@ -13,24 +13,20 @@ const scrollBackground = (i) => {
     background.style.backgroundPositionY = 0 - i + "px";
 }
 
-const delayForScrolling = () => {
-    for (let i = 1; i < 800; i++) {
-        setTimeout(scrollBackground, i * 5, i);
-    }
-}
 
 hoverLogo.addEventListener('mouseover', () => {
+    background.style.position = "relative";
+    background.style.backgroundRepeat = "no-repeat";
 
-        background.classList.remove('bgImage');
-        background.classList.add('bgImageForScrolling');
-
-        for (let i = 1; i < 49; i++) {
-            setTimeout(darkenTint, i * 90, (49 - i));
-        }
-
-        setTimeout(delayForScrolling, 600);
+    for (let i = 1; i < 49; i++) {
+        setTimeout(darkenTint, i * 90, (49 - i));
     }
-)
+
+    for (let i = 1; i < 600; i++) {
+        setTimeout(scrollBackground, i * 5, i);
+
+    }
+})
 
 
 // const setImage = (i) => {
