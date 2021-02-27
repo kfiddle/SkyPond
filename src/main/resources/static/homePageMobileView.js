@@ -5,7 +5,8 @@ const title = document.getElementById('homePage_title');
 
 let phoneScreen = window.matchMedia('(max-width:700px');
 let hugeScreen = window.matchMedia('(min-width: 1598px');
-let mediumScreen = window.matchMedia('(max-width: 795px)');
+let smallishScreen = window.matchMedia('(max-width: 795px)');
+let mediumScreen = window.matchMedia('(min-width: 796px)');
 
 if (phoneScreen.matches) {
     body.style.marginTop = "40%";
@@ -17,13 +18,22 @@ if (phoneScreen.matches) {
 
 if (hugeScreen.matches) {
     title.style.fontSize = "5rem";
+    logoContainer.style.marginTop = "100%";
+
 }
 
-if (mediumScreen.matches) {
-    body.style.marginTop = "40%";
+if (smallishScreen.matches) {
+    body.style.marginTop = "20%";
     logoContainer.classList.remove('homePage');
     logoContainer.classList.add('homePageMobileOnly');
 }
+
+if (mediumScreen.matches) {
+    logoContainer.style.marginTop = "45%";
+}
+
+
+
 
 
 
