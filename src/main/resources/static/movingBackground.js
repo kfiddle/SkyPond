@@ -9,10 +9,15 @@ const darkenTint = (i) => {
     tint.style.opacity = (i * 0.01).toString();
 }
 
-const scrollBackground = (i) => {
-    background.style.backgroundPositionY = 0 - i + "px";
+const positionBackground = (i) => {
+    background.style.backgroundPositionY = i + "%";
 }
 
+const scrollBackground = () => {
+    for (let i = 1; i < 120; i++) {
+        setTimeout(positionBackground, i * 15, i);
+    }
+}
 
 hoverLogo.addEventListener('mouseover', () => {
     background.style.position = "relative";
@@ -21,11 +26,8 @@ hoverLogo.addEventListener('mouseover', () => {
     for (let i = 1; i < 49; i++) {
         setTimeout(darkenTint, i * 90, (49 - i));
     }
+    setTimeout(scrollBackground, 2000);
 
-    for (let i = 1; i < 600; i++) {
-        setTimeout(scrollBackground, i * 5, i);
-
-    }
 })
 
 

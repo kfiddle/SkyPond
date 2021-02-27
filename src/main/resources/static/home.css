@@ -9,16 +9,6 @@
 
 }
 
-.bgImageForScrolling {
-    top: 0;
-    z-index: -2;
-    min-width: 100vw;
-    min-height: 100vh;
-    background-image: url(/skyPond_artwork.jpg);
-    background-repeat: no-repeat;
-
-}
-
 body {
     background-color: #3D441E;
 }
