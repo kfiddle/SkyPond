@@ -13,7 +13,6 @@ public class Customer {
     private Long id;
     private String firstName;
     private String lastName;
-    private String fullName;
     private String email;
     private String phoneNumber;
     private String comments;
@@ -100,4 +99,9 @@ public class Customer {
     public Address getAddress() {
         return address;
     }
+
+    public String getComments() {
+        return comments;
+    }
 }
+

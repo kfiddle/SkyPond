@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>all customers here</title>
+</head>
+<body>
+
+<h1>All the cool kids will be listed here...</h1>
+
+<ul th:each = "customer: ${allCustomers}">
+    <li th:text ="${customer.firstName}"></li>
+
+</ul>
+
+
+</body>
+</html>
