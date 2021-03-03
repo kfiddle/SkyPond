@@ -68,6 +68,7 @@ input{
     padding: 1rem;
     margin-bottom: .5rem;
     font-size: 1rem;
+    /*width: 100%;*/
 }
 
 ::placeholder{
@@ -77,7 +78,6 @@ input{
 .left_column{
     display: flex;
     flex-direction: column;
-    /*width: 80%;*/
 }
 
 .name input{
@@ -98,9 +98,11 @@ textarea{
 
 .submit_button{
     background-color: #3D441E;
+    width: 50%;
+    margin: 0 auto;
 }
 
-input [type="submit"]{
+input [type=submit]{
     background-color: #3D441E;
     margin: 0 auto;
     color: #d1d1ab;
