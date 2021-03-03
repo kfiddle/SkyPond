@@ -13,9 +13,10 @@ public class Customer {
     private Long id;
     private String firstName;
     private String lastName;
-
+    private String fullName;
     private String email;
     private String phoneNumber;
+    private String comments;
 
     @ManyToOne
     private Address address;
@@ -62,6 +63,16 @@ public class Customer {
         this.email = email;
         this.phoneNumber = phoneNumber;
     }
+
+    public Customer(String firstName, String lastName, String email, String phoneNumber, String comments) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.comments = comments;
+    }
+
+
 
 
 
