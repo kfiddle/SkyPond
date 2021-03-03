@@ -34,12 +34,12 @@
 }
 
 .headerLogo{
-    width: 9vw;
+    width: 7.5vw;
 }
 
 .basicPage_title {
     color: #d1d1ab;
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: 300;
 }
 
@@ -47,6 +47,14 @@
     margin: 15rem auto 5rem;
     max-width: 60rem;
     width: 100%;
+}
+
+.text{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    width: 60vw;
+    margin: 0 auto;
 }
 
 
