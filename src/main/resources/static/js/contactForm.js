@@ -40,6 +40,65 @@ const formatPhoneNumber = (event) => {
 }
 
 
+const validEntry = (event) => {
+    displayedNumber = phone.value;
+    let key = event.keyCode;
+    let currentLength = displayedNumber.length;
+
+    if (key === 8 && currentLength === 4) {
+        displayedNumber = displayedNumber.substring(1, displayedNumber.length);
+    }
+
+    if (key === 8 && currentLength === 9) {
+        displayedNumber = displayedNumber.substring(0, displayedNumber.length - 1);
+    }
+
+    if (currentLength === 3) {
+        displayedNumber = '(' + displayedNumber + ') ';
+    }
+
+    if (currentLength === 9) {
+        displayedNumber = displayedNumber + '-';
+    }
+
+    if (currentLength === 15) {
+        displayedNumber = displayedNumber.substring(0, phone.value.length - 1);
+
+    }
+
+
+    console.log(displayedNumber);
+    console.log(currentLength);
+    phone.value = displayedNumber;
+}
+
+
+const phoneFormatter2 = (event) => {
+    let key = event.keyCode;
+    let numbers, backspace, dash;
+
+    if ((key > 47 && key < 58) || (key > 95 && key < 106)) {
+        numbers = true;
+    }
+
+    if (key === 8) {
+        backspace = true;
+    }
+
+    if (key === 189) {
+        dash = true;
+    }
+
+    if (!numbers && !backspace && !dash) {
+        phone.value = phone.value.substring(0, phone.value.length - 1);
+    } else {
+        validEntry(event);
+    }
+
+
+}
+
+
 const submitCustomer = () => {
 
     let fullName = document.getElementById('name').value;
@@ -70,7 +129,11 @@ const submitCustomer = () => {
 
 
 phone.addEventListener('keyup', () => {
-    formatPhoneNumber(event);
+    // formatPhoneNumber(event);
+
+    phoneFormatter2(event);
+
+
 });
 button.addEventListener('click', submitCustomer);
 
