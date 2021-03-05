@@ -12,6 +12,10 @@
 
 <ul th:each = "customer: ${allCustomers}">
     <li th:text ="${customer.firstName}"></li>
+    <li th:text = "${customer.lastName}"></li>
+    <li th:text = "${customer.phoneNumber}"></li>
+
+
 
 </ul>
 

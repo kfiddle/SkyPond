@@ -1,16 +1,17 @@
 const button = document.getElementById('button');
 const phone = document.getElementById('phone');
-
+let displayedNumber = "";
 
 const formatPhoneNumber = (event) => {
-    let displayedNumber = phone.value;
+    displayedNumber = phone.value;
     let key = event.keyCode;
 
     if (key === 8) {
         displayedNumber = displayedNumber.substring(-1);
         phone.value = displayedNumber;
+        console.log(displayedNumber);
 
-    } else if ((key > 47 && key < 58) || (key > 96 && key < 105)) {
+    } else if ((key > 47 && key < 58) || (key > 95 && key < 106) || key === 189) {
 
         if (displayedNumber.length === 3) {
             displayedNumber = '(' + displayedNumber + ') ';
@@ -25,18 +26,17 @@ const formatPhoneNumber = (event) => {
             }
         }
 
-        if (displayedNumber.length === 14) {
-            displayedNumber = displayedNumber.substring(0, 13);
+        if (displayedNumber.length === 15) {
+            displayedNumber = displayedNumber.substring(0, 14);
             phone.value = displayedNumber;
         }
-    }
-    else {
+    } else {
         displayedNumber = displayedNumber.substring(0, displayedNumber.length - 1);
         phone.value = displayedNumber;
 
-}
-    console.log(displayedNumber);
+    }
 
+    console.log(displayedNumber);
 }
 
 
@@ -45,7 +45,6 @@ const submitCustomer = () => {
     let fullName = document.getElementById('name').value;
     let email = document.getElementById('email').value;
 
-
     let names = fullName.split(" ");
     let firstName = names[0];
     let lastName = names[1];
@@ -53,7 +52,7 @@ const submitCustomer = () => {
     let formData = {
         firstName: firstName,
         lastName: lastName,
-        phoneNumber: phone,
+        phoneNumber: phone.value,
         email: email,
     }
 
@@ -70,7 +69,7 @@ const submitCustomer = () => {
 }
 
 
-phone.addEventListener('keydown', () => {
+phone.addEventListener('keyup', () => {
     formatPhoneNumber(event);
 });
 button.addEventListener('click', submitCustomer);
