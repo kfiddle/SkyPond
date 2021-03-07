@@ -2,44 +2,6 @@ const button = document.getElementById('button');
 const phone = document.getElementById('phone');
 let displayedNumber = "";
 
-const formatPhoneNumber = (event) => {
-    displayedNumber = phone.value;
-    let key = event.keyCode;
-
-    if (key === 8) {
-        displayedNumber = displayedNumber.substring(-1);
-        phone.value = displayedNumber;
-        console.log(displayedNumber);
-
-    } else if ((key > 47 && key < 58) || (key > 95 && key < 106) || key === 189) {
-
-        if (displayedNumber.length === 3) {
-            displayedNumber = '(' + displayedNumber + ') ';
-            phone.value = displayedNumber;
-        }
-
-        if (displayedNumber.length === 9) {
-            if (event.keyCode === 189) {
-                phone.value = displayedNumber;
-            } else {
-                phone.value = displayedNumber + '-';
-            }
-        }
-
-        if (displayedNumber.length === 15) {
-            displayedNumber = displayedNumber.substring(0, 14);
-            phone.value = displayedNumber;
-        }
-    } else {
-        displayedNumber = displayedNumber.substring(0, displayedNumber.length - 1);
-        phone.value = displayedNumber;
-
-    }
-
-    console.log(displayedNumber);
-}
-
-
 const validEntry = (event) => {
     displayedNumber = phone.value;
     let key = event.keyCode;
@@ -49,26 +11,22 @@ const validEntry = (event) => {
         displayedNumber = displayedNumber.substring(1, displayedNumber.length);
     }
 
-    if (key === 8 && currentLength === 9) {
+     else if (key === 8 && currentLength === 10) {
         displayedNumber = displayedNumber.substring(0, displayedNumber.length - 1);
     }
 
-    if (currentLength === 3) {
+    else if (currentLength === 3) {
         displayedNumber = '(' + displayedNumber + ') ';
     }
 
-    if (currentLength === 9) {
+    else if (currentLength === 9) {
         displayedNumber = displayedNumber + '-';
     }
 
-    if (currentLength === 15) {
+    else if (currentLength === 15) {
         displayedNumber = displayedNumber.substring(0, phone.value.length - 1);
 
     }
-
-
-    console.log(displayedNumber);
-    console.log(currentLength);
     phone.value = displayedNumber;
 }
 
@@ -129,11 +87,7 @@ const submitCustomer = () => {
 
 
 phone.addEventListener('keyup', () => {
-    // formatPhoneNumber(event);
-
     phoneFormatter2(event);
-
-
 });
 button.addEventListener('click', submitCustomer);
 
