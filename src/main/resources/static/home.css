@@ -29,9 +29,11 @@ body {
 
 
 #homePage_container {
-    margin: 0 auto;
     max-width: 70rem;
     width: 100%;
+    position: fixed;
+    bottom: 3%;
+    left: 10%;
 }
 
 .homePage {
