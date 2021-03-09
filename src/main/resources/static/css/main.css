@@ -12,6 +12,10 @@ html{
     font-family: 'Quicksand', sans-serif;
 }
 
+.hidden {
+    display: none;
+}
+
 
 
 

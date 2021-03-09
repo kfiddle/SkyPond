@@ -49,9 +49,23 @@ body {
     font-weight: 300;
 }
 
+#logoAndBirdContainer {
+    position: relative;
+    width:25%;
+}
+
 .skyPondLogo {
     width: 15vw;
 }
+
+#bird {
+    position: absolute;
+    width: 6%;
+    height: 10%;
+    left: 21%;
+    bottom: 32%;
+}
+
 
 .homePageMobileOnly {
 
@@ -59,6 +73,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 
 
 

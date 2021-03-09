@@ -1,5 +1,6 @@
 const button = document.getElementById('button');
 const phone = document.getElementById('phone');
+const thankYouBox = document.getElementById("thankYouContainer");
 let displayedNumber = "";
 
 const validEntry = (event) => {
@@ -56,6 +57,10 @@ const phoneFormatter2 = (event) => {
 
 }
 
+const scrollToThankYouBox = () => {
+    window.scrollBy(0, 0-1);
+}
+
 
 const submitCustomer = () => {
 
@@ -81,6 +86,16 @@ const submitCustomer = () => {
             dataType: 'json'
         }
     )
+
+    thankYouBox.classList.remove('hidden');
+    let thankYouStatement = document.createElement('h2');
+    thankYouStatement.innerHTML = firstName + " , thank you for submitting our customer form. You're an ok person.";
+    thankYouBox.appendChild(thankYouStatement);
+
+    for (let i = 1; i < 400; i++) {
+        setTimeout(scrollToThankYouBox, 5 * i);
+
+    }
 
 
 }
