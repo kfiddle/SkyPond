@@ -33,7 +33,7 @@ public class CustomerController {
 
     }
 
-    @RequestMapping("/home")
+    @RequestMapping("/")
     public String getHomePage(){
         return "home";
     }

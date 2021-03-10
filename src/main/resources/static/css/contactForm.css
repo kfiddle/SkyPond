@@ -12,7 +12,7 @@
 #header{
     width:100vw;
     height: 13rem;
-    background-image: url(/header_image.jpg);
+    background-image: url(/images/header_image.jpg);
     background-size: cover;
     position: fixed;
     top: 0;
@@ -140,7 +140,7 @@ textarea{
 
 #footer{
     height: 7rem;
-    background-image: url(/footer_image.jpg);
+    background-image: url(/images/footer_image.jpg);
     bottom: 0;
     width:100vw;
     background-size: cover;
