@@ -22,15 +22,15 @@ public class CustomerController {
     @Resource
     AddressRepository addressRepository;
 
-//    @RequestMapping("/all-customers")
-//    public String displayAllCustomers(Model model) {
-//        model.addAttribute("allCustomers", customerRepository.findAll());
-//        return "allCustomersPage";
-//    }
+    @RequestMapping("/karins-customers")
+    public String displayAllCustomers(Model model) {
+        model.addAttribute("allCustomers", customerRepository.findAll());
+        return "allCustomersPage";
+    }
 
     @PostMapping("/add-customer")
     public void addNewCustomerToDatabase(@RequestBody Customer customer) {
-
+        customerRepository.save(customer);
     }
 
     @RequestMapping("/")

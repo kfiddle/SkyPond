@@ -68,6 +68,7 @@ input{
     padding: 1rem;
     margin-bottom: .5rem;
     font-size: 1rem;
+
     border: .125rem solid #3D441E;
     background-color: #d1d1ab;
     font-family: 'Quicksand';
@@ -82,12 +83,14 @@ input:-webkit-autofill:active  {
 
 ::placeholder{
     color: #3D441E;
+
 }
 
 .left_column{
     display: flex;
     flex-direction: column;
 }
+
 
 /*.name input{*/
 /*    background-color: #d1d1ab;*/
@@ -145,8 +148,5 @@ textarea{
     width: 100%;
 }
 
-/*.hidden {*/
-/*    display: none;*/
-/*}*/
 
 

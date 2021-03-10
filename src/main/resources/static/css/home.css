@@ -15,6 +15,7 @@ body {
 
 
 
+
 /*.tint {*/
 /*    content: "";*/
 /*    position: relative;*/
@@ -28,16 +29,12 @@ body {
 /*}*/
 
 
-
-
 #homePage_container {
-
     max-width: 70rem;
     width: 100%;
     position: fixed;
     bottom: 3%;
     left: 10%;
-
 }
 
 .homePage {
@@ -58,6 +55,7 @@ body {
 .skyPondLogo {
     width: 15vw;
 }
+
 
 .homePageMobileOnly {
 

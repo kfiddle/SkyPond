@@ -6,11 +6,9 @@ const positionBackground = (i) => {
     background.style.backgroundPositionY = i + "%";
 }
 
-
 const scrollBackground = () => {
     for (let i = 1; i < 105; i++) {
         setTimeout(positionBackground, i * 10, i);
-
     }
 }
 
@@ -22,9 +20,7 @@ hoverLogo.addEventListener('click', () => {
     background.style.position = "relative";
     background.style.backgroundRepeat = "no-repeat";
 
-
     setTimeout(scrollBackground, 1000);
     setTimeout(switchToContactPage, 2000);
-
 
 });
