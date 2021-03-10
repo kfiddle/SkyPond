@@ -14,24 +14,27 @@ body {
 }
 
 
-.tint {
-    content: "";
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #3D441E;
-    opacity: 0.49;
-    z-index: -1;
-}
 
+
+/*.tint {*/
+/*    content: "";*/
+/*    position: relative;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    background: #3D441E;*/
+/*    opacity: 0.49;*/
+/*    z-index: -1;*/
+/*}*/
 
 
 #homePage_container {
-    margin: 0 auto;
     max-width: 70rem;
     width: 100%;
+    position: fixed;
+    bottom: 3%;
+    left: 10%;
 }
 
 .homePage {
@@ -49,21 +52,8 @@ body {
     font-weight: 300;
 }
 
-#logoAndBirdContainer {
-    position: relative;
-    width:25%;
-}
-
 .skyPondLogo {
     width: 15vw;
-}
-
-#bird {
-    position: absolute;
-    width: 6%;
-    height: 10%;
-    left: 21%;
-    bottom: 32%;
 }
 
 
@@ -73,12 +63,4 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
-
-
-
-
-
-
-
 

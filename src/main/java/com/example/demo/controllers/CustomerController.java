@@ -33,7 +33,7 @@ public class CustomerController {
         customerRepository.save(customer);
     }
 
-    @RequestMapping("/home")
+    @RequestMapping("/")
     public String getHomePage(){
         return "home";
     }
