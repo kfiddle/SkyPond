@@ -1,5 +1,6 @@
 /*.tint {*/
 /*    content: "";*/
+
 /*    position: fixed;*/
 /*    top: 0;*/
 /*    background: #3D441E;*/
@@ -7,6 +8,9 @@
 /*    z-index: -1;*/
 /*    width: 100vw;*/
 /*    height: 13rem;*/
+
+
+
 /*}*/
 
 #header{
@@ -22,7 +26,10 @@
     margin: 0 auto;
     max-width: 60rem;
     width: 100%;
+
     z-index: 0;
+
+
 }
 
 .identity{
@@ -66,6 +73,8 @@
 
 input{
     padding: 1rem;
+
+
     font-size: 1rem;
     border: .125rem solid #3D441E;
     background-color: #d1d1ab;
@@ -87,6 +96,7 @@ input:-webkit-autofill:active  {
     display: flex;
     flex-direction: column;
 }
+
 
 #name{
     margin-bottom: .5rem;
@@ -111,6 +121,7 @@ textarea{
     font-family: 'QUICKSAND';
     background-color: #d1d1ab;
     margin-bottom: .5rem;
+
 }
 
 .submit_button{
