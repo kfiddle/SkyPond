@@ -137,4 +137,9 @@ textarea{
     display: none;
 }
 
+body.modal-open {
+    /* hide scrolling when modal open */
+    overflow: hidden;
+}
+
 
