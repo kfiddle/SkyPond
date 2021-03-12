@@ -1,11 +1,11 @@
 .bgImage {
+    background-image: url(/skyPond_artwork.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
     position: fixed;
     top: 0;
     z-index: -2;
-    min-width: 100vw;
-    min-height: 100vh;
-    background-image: url(/skyPond_artwork.jpg);
-    background-size: cover;
 
 }
 
@@ -13,35 +13,18 @@ body {
     background-color: #3D441E;
 }
 
-
-/*.tint {*/
-/*    content: "";*/
-/*    position: relative;*/
-/*    top: 0;*/
-/*    bottom: 0;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    background: #3D441E;*/
-/*    opacity: 0.49;*/
-/*    z-index: -1;*/
-/*}*/
-
-
-
 #homePage_container {
+    bottom: 3%;
+    left: 10%;
     max-width: 70rem;
     width: 100%;
     position: fixed;
-    bottom: 3%;
-    left: 10%;
 }
 
 .homePage {
     align-items: center;
     display: flex;
     justify-content: space-evenly;
-    /* grid-template-columns: 1fr 4fr; */
-    /* grid-column-gap: 1.5rem; */
     margin-top: 30rem;
 }
 
@@ -56,10 +39,9 @@ body {
 }
 
 .homePageMobileOnly {
-
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .hidden{
