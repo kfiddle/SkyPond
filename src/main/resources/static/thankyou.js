@@ -1,3 +1,11 @@
+(function() {
+
+    setUpPage();
+
+    function setUpPage() {
+        addModalEventListeners();
+    }
+
 // Modal can be opened
 function addModalEventListeners() {
 
@@ -18,3 +26,4 @@ function addModalEventListeners() {
 
     modalCloseButton.addEventListener('click', modalCloseButtonClickHandler);
 }
+})();

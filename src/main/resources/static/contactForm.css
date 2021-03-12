@@ -137,9 +137,64 @@ textarea{
     display: none;
 }
 
+/*all things modal*/
+
 body.modal-open {
     /* hide scrolling when modal open */
     overflow: hidden;
+}
+
+#backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-open #backdrop {
+    display: flex;
+}
+
+#modal {
+    width: 80vw;
+    height: 50vh;
+    background: #d0d1ab;
+    padding: 1.5em;
+    border: .5rem solid #3d441e;
+}
+
+#modal button {
+    float: right;
+    background: #3d441e;
+    padding: .75rem;
+    border: 0;
+    cursor: pointer;
+    color: #d1d1ab;
+    font-size: 1.5rem;
+}
+
+#modal button:hover {
+    color: #fff;
+    background: #999;
+}
+
+#modal #modal-content {
+    clear: both;
+    padding: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #3d441e;
+
+}
+
+.thank_you{
+    padding-bottom: 1rem;
 }
 
 
