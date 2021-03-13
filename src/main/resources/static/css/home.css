@@ -59,6 +59,14 @@ body {
     width: 15vw;
 }
 
+#bird {
+    position: absolute;
+    width: 15vw;
+    bottom: 13vh;
+    left: 8vw;
+
+}
+
 .homePageMobileOnly {
 
     display: flex;
