@@ -6,27 +6,27 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/contactForm.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <title>Contact Us</title>
 </head>
 
 
 
 <body>
-<!--<div id="bgImage"></div>-->
-<div class="tint" id="tint"></div>
 
 <header id="header">
     <div class="headerContents">
         <div class="identity">
             <img class="headerLogo" src="/images/skyPond_logo.png" alt="">
             <h1 class="basicPage_title">farm and landscape</h1>
+
+            <nav class="headerNav">
+                <ul class="headerNav_list">
+                    <li class="headerNav_listItem"><a href="#">link one</a></li>
+                    <li class="headerNav_listItem"><a href="#">link two</a></li>
+                </ul>
+            </nav>
         </div>
-        <!--    <nav class="headerNav">-->
-        <!--        <ul class="headerNav_list">-->
-        <!--            <li class="headerNav_listItem"><a href="#">farm</a></li>-->
-        <!--            <li class="headerNav_listItem"><a href="#">landscape</a></li>-->
-        <!--        </ul>-->
-        <!--    </nav>-->
     </div>
 </header>
 
@@ -34,27 +34,25 @@
 
 <div id="container">
 
-    <div id="thankYouContainer" class="hidden"></div>
-
     <div class="text">We provide solutions for your small landscape and gardening needs.
         Including spring and fall cleanup, raised garden beds, planting and maintenance.
         <br><br>Let us know what you have in mind!</div>
 
     <div class="contact_form">
         <div class="left_column">
-        <input name="name" type="text" id="name" placeholder="Name">
-        <input name="email" type="text" id="email" placeholder="Email Address">
-        <input name="phone" type="text" id="phone" placeholder="Phone">
+            <input name="name" type="text" id="name" placeholder="Name">
+            <input name="email" type="text" id="email" placeholder="Email Address">
+            <input name="phone" type="text" id="phone" placeholder="Phone">
         </div>
 
         <div class="right_column">
-              <textarea name="comments" type="textarea" id="comments" placeholder="Message"></textarea>
-    </div>
+            <textarea name="comments" id="comments" placeholder="Message"></textarea>
+        </div>
 
     </div>
 
     <div class="submit_button">
-        <button name="button" id="button">Send Message</button>
+        <span id="modal-trigger" class="live"><button name="button" id="button"> Send Message</button></span>
     </div>
 
 
@@ -62,11 +60,31 @@
 
 <footer id="footer">
     <div class="footer_Contents">
+        <nav class="footerNav">
+            <ul class="footerNav_list">
+                <li class="footerNav_listItem"><a href="#">link one</a></li>
+                <li class="footerNav_listItem"><a href="#">link two</a></li>
+            </ul>
+        </nav>
 
     </div>
 </footer>
 
-<script src="/js/contactForm.js"></script>
+<div id="backdrop">
+    <div id="modal">
+        <button class="text-button">X</button>
+
+
+        <div id="modal-content">
+            <p class="thank_you">Thanks for your message.</p> <p> We will get back to you within one business day!</p>
+        </div>
+    </div>
+</div>
+
+<script src="/js/thankyou.js"></script>
+<script src="/js/contactFormViews.js"></script>
+<script src="js/contactForm.js"></script>
 </body>
 
 </html>
+
