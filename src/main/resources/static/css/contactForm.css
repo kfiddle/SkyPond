@@ -9,6 +9,7 @@
 
 .headerContents{
     display: flex;
+    height: 13rem;
     margin: auto;
     max-width: 60rem;
     /*padding: 2rem 0 2rem 0;*/
