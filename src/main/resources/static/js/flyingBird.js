@@ -6,7 +6,7 @@ function displayBird(frame, leftSpot, bottomSpot) {
     bird.style.bottom = bottomSpot + "vh";
 }
 
-function fly(frame, time) {
+function fly(index, time) {
 
     let flyingLoop = [1, 2, 3, 4, 5, 6, 7, 8,
         9, 10, 11, 12, 9, 10, 11, 12, 9, 10, 11, 12, 9, 10, 11, 12, 9, 10, 11, 12];
@@ -17,11 +17,11 @@ function fly(frame, time) {
         bottomSpots[i] = i + 13;
     }
 
-    if (frame < 23) {
-        setTimeout(displayBird, time * 150, flyingLoop[frame], leftSpots[frame], bottomSpots[frame]);
-        frame++;
+    if (index < 23) {
+        setTimeout(displayBird, time * 150, flyingLoop[index], leftSpots[index], bottomSpots[index]);
+        index++;
         time++;
-        fly(frame, time);
+        fly(index, time);
     }
 }
 
