@@ -18,7 +18,7 @@ function fly(index, time) {
     }
 
     if (index < 23) {
-        setTimeout(displayBird, time * 150, flyingLoop[index], leftSpots[index], bottomSpots[index]);
+        setTimeout(displayBird, time * 130, flyingLoop[index], leftSpots[index], bottomSpots[index]);
         index++;
         time++;
         fly(index, time);
