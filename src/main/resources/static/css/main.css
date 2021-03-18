@@ -10,6 +10,7 @@ html{
     color: #322923;
     font-size: 1rem;
     font-family: 'Quicksand', sans-serif;
+    cursor: url(../images/morel.png), auto;
 }
 
 .hidden {
