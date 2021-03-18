@@ -18,13 +18,32 @@ const switchToContactPage = () => {
     window.location = "/contact";
 }
 
+
+
 hoverLogo.addEventListener('click', () => {
     background.style.position = "relative";
     background.style.backgroundRepeat = "no-repeat";
+    fly(0, 1);
 
-
-    setTimeout(scrollBackground, 1000);
-    setTimeout(switchToContactPage, 2000);
+    setTimeout(scrollBackground, 1600);
+    setTimeout(switchToContactPage, 2800);
 
 
 });
+
+
+
+
+
+//         *****leaving original hoverlogo eventlistener below, just in case*****
+
+// hoverLogo.addEventListener('click', () => {
+//     background.style.position = "relative";
+//     background.style.backgroundRepeat = "no-repeat";
+//
+//
+//     setTimeout(scrollBackground, 1000);
+//     setTimeout(switchToContactPage, 2000);
+//
+//
+// });

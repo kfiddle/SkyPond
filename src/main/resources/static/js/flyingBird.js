@@ -24,4 +24,4 @@ function fly(index, time) {
     }
 }
 
-fly(0, 1);
+// fly(0, 1);
