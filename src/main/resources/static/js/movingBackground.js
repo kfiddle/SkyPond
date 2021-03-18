@@ -3,7 +3,10 @@ const hoverLogo = document.getElementById('homePage');
 const header = document.getElementById('header');
 const contactForm = document.getElementById("contactFormContainer");
 const body = document.querySelector("body");
+const text = document.querySelector('.text');
 
+text.style.color = "rgb(222, 228, 47)";
+text.style.opacity = "0";
 
 const positionBackground = (i) => {
     background.style.backgroundPositionY = i + "%";
@@ -36,6 +39,7 @@ function contactFormFloatUp() {
     contactForm.style.transform = `translateY(-10vh)`;
     body.style.overflow = "none";
     darkenLogoAndBird(1);
+    glowingLetters(1);
 }
 
 function darkenLogoAndBird(startingOpacity) {
@@ -48,6 +52,19 @@ function darkenLogoAndBird(startingOpacity) {
         darkenLogoAndBird(startingOpacity);
     }
 }
+
+function glowingLetters(startingOpacity) {
+    setTimeout(() => {
+        text.style.opacity = (startingOpacity * 0.01).toString();
+    }, startingOpacity * 30);
+
+    startingOpacity += 1;
+    if (startingOpacity <= 100) {
+        glowingLetters(startingOpacity);
+    }
+}
+
+
 
 
 //         *****leaving original hoverlogo eventlistener below, just in case*****
