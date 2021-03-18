@@ -24,4 +24,3 @@ function fly(index, time) {
     }
 }
 
-// fly(0, 1);

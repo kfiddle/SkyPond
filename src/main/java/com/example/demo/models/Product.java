@@ -13,13 +13,15 @@ public class Product {
     private Long id;
 
     private String name;
+    private String image;
     private float price;
 
     public Product() {
     }
 
-    public Product(String name, float price) {
+    public Product(String name, String image, float price) {
         this.name = name;
+        this.image = image;
         this.price = price;
     }
 
@@ -30,6 +32,10 @@ public class Product {
 
     public String getName() {
         return name;
+    }
+
+    public String getImage() {
+        return image;
     }
 
     public float getPrice() {
