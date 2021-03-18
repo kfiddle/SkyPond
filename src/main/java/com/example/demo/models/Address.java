@@ -18,9 +18,7 @@ public class Address {
     private String zipcode;
     private String buildingNumber;
 
-    public Address(){
-
-
+    public Address() {
     }
 
     public Long getId() {
