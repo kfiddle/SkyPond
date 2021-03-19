@@ -1,13 +1,22 @@
-const background = document.getElementById('bgImage');
-const hoverLogo = document.getElementById('homePage');
 const header = document.getElementById('header');
 const contactForm = document.getElementById("contactFormContainer");
 const body = document.querySelector("body");
-const text = document.querySelector('.text');
+const text = document.querySelector(".text");
+const nav1 = document.getElementById("nav1");
+const nav2 = document.getElementById("nav2");
+const textElements = [button, text, nav1, nav2];
+console.log(textElements);
 
-text.style.color = "#8EA133";
-text.style.opacity = "0";
+textElements.forEach(element=> {
+    element.style.color = "#8EA133";
+    element.style.opacity = "0";
+    element.style.fontWeight = "700";
+})
 
+// text.style.color = "#8EA133";
+// button.style.color = "#8EA133";
+// text.style.opacity = "0";
+// button.style.opacity = "0";
 
 const positionBackground = (i) => {
     background.style.backgroundPositionY = i + "%";
@@ -53,7 +62,12 @@ function darkenLogoAndBird(startingOpacity) {
 
 function glowingLetters(startingOpacity) {
     setTimeout(() => {
-        text.style.opacity = (startingOpacity * 0.01).toString();
+        textElements.forEach(element=> {
+            element.style.opacity = (startingOpacity * 0.01).toString();
+            });
+
+        // text.style.opacity = (startingOpacity * 0.01).toString();
+        // button.style.opacity = (startingOpacity * 0.01).toString();
     }, startingOpacity * 30);
 
     startingOpacity += 1;
@@ -61,8 +75,6 @@ function glowingLetters(startingOpacity) {
         glowingLetters(startingOpacity);
     }
 }
-
-
 
 
 //         *****leaving original hoverlogo eventlistener below, just in case*****

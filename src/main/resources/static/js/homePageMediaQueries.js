@@ -3,6 +3,7 @@ const logo = document.getElementById('skyPondLogo');
 const homePageTitle = document.getElementById('homePage_title');
 const bodyContainer = document.querySelector("body");
 
+
 let birdSize = "";
 
 let phoneBird = ["26vw", "15vh", "49vw"]

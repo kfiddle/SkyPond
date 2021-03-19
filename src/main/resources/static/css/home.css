@@ -15,7 +15,6 @@ body {
 }
 
 
-
 /*.tint {*/
 /*    content: "";*/
 /*    position: relative;*/
@@ -27,8 +26,6 @@ body {
 /*    opacity: 0.49;*/
 /*    z-index: -1;*/
 /*}*/
-
-
 
 
 #homePage_container {
@@ -54,7 +51,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    opacity: 0;
 }
 
 
