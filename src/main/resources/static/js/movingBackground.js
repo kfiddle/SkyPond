@@ -22,16 +22,12 @@ const scrollBackground = () => {
     }
 }
 
-const switchToContactPage = () => {
-    window.location = "/contact";
-}
-
 
 hoverLogo.addEventListener('click', () => {
     fly(0, 1);
 
     setTimeout(scrollBackground, 1600);
-    // setTimeout(switchToContactPage, 2800);
+
     setTimeout(contactFormFloatUp, 2600);
 
 
