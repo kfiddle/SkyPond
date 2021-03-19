@@ -1,6 +1,6 @@
 const button = document.getElementById('button');
 const phone = document.getElementById('phone');
-const thankYouBox = document.getElementById("thankYouContainer");
+// const thankYouBox = document.getElementById("thankYouContainer");
 let displayedNumber = "";
 
 const validEntry = (event) => {
@@ -57,21 +57,21 @@ const phoneFormatter2 = (event) => {
 
 }
 
-const scrollToThankYouBox = (i) => {
-    thankYouBox.style.height = i + "px";
-}
+// const scrollToThankYouBox = (i) => {
+//     thankYouBox.style.height = i + "px";
+// }
 
-const openThankYouBox = (firstName) => {
-    thankYouBox.classList.remove('hidden');
-    let thankYouStatement = document.createElement('h2');
-    thankYouStatement.innerHTML = firstName + ", thank you for submitting our customer form. You're an ok person.";
-    thankYouBox.appendChild(thankYouStatement);
-
-    for (let i = 1; i < 300; i++) {
-        setTimeout(scrollToThankYouBox, 5 * i, i);
-    }
-
-}
+// const openThankYouBox = (firstName) => {
+//     thankYouBox.classList.remove('hidden');
+//     let thankYouStatement = document.createElement('h2');
+//     thankYouStatement.innerHTML = firstName + ", thank you for submitting our customer form. You're an ok person.";
+//     thankYouBox.appendChild(thankYouStatement);
+//
+//     for (let i = 1; i < 300; i++) {
+//         setTimeout(scrollToThankYouBox, 5 * i, i);
+//     }
+//
+// }
 
 const submitCustomer = () => {
 
@@ -80,7 +80,7 @@ const submitCustomer = () => {
 
     let names = fullName.split(" ");
     let firstName = names[0];
-    let lastName = names[1];
+    let lastName = names[names.length - 1];
 
     let formData = {
         firstName: firstName,
@@ -88,6 +88,10 @@ const submitCustomer = () => {
         phoneNumber: phone.value,
         email: email,
     }
+
+    console.log(firstName);
+    console.log(lastName);
+    console.log(phone.value);
 
     $.ajax({
             type: "POST",
@@ -97,8 +101,6 @@ const submitCustomer = () => {
             dataType: 'json'
         }
     )
-
-    setTimeout(openThankYouBox, 500, firstName);
 
 }
 

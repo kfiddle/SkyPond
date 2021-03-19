@@ -4,7 +4,8 @@
     z-index: -2;
     min-width: 100vw;
     min-height: 100vh;
-    background-image: url(/images/skyPond_artwork.jpg);
+    /*background-image: url(/images/skyPond_artwork.jpg);*/
+    background-image: url("/images/skyPond_darker_background.jpg");
     background-size: cover;
 
 }
@@ -36,7 +37,7 @@ body {
     width: 100%;
     position: fixed;
     bottom: 3%;
-    left: 10%;
+    /*left: 10%;*/
 
 }
 
@@ -57,6 +58,14 @@ body {
 
 .skyPondLogo {
     width: 15vw;
+}
+
+#bird {
+    position: absolute;
+    width: 15vw;
+    bottom: 13vh;
+    left: 8vw;
+
 }
 
 .homePageMobileOnly {
