@@ -72,10 +72,13 @@
 
 .text{
     font-size: 1.5rem;
+    font-weight: 900;
     line-height: 2rem;
     margin: 0 auto;
     text-align: center;
     width: 60vw;
+    color: #8EA133;
+    opacity: 0;
 }
 
 .contact_form{
@@ -140,12 +143,15 @@ textarea{
     margin: 0 auto;
 }
 
+
+
 #button{
     background-color: #3D441E;
     border: none;
-    color: #d1d1ab;
+    /*color: #d1d1ab;*/
     cursor: pointer;
     font-family: 'Quicksand';
+    font-weight: 700;
     font-size: 1.25rem;
     padding: 1rem;
     width: 30rem;
@@ -182,10 +188,10 @@ textarea{
     padding: 2rem 2rem 0 0;
 }
 
-.footerNav_listItem a{
-    color: #d1d1ab;
-    text-decoration: none;
-}
+/*.footerNav_listItem a{*/
+/*    color: #d1d1ab;*/
+/*    text-decoration: none;*/
+/*}*/
 
 .hidden {
     display: none;
