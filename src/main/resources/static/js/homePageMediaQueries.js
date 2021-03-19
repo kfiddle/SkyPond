@@ -8,7 +8,6 @@ let smallishScreen = window.matchMedia('(max-width: 795px)');
 let mediumScreen = window.matchMedia('(min-width: 796px)');
 
 if (phoneScreen.matches) {
-    console.log("we're in da phone")
     bodyContainer.style.marginTop = "40%";
     logoContainer.classList.remove('homePage');
     logoContainer.classList.add('homePageMobileOnly');

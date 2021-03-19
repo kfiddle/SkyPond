@@ -5,8 +5,10 @@ const contactForm = document.getElementById("contactFormContainer");
 const body = document.querySelector("body");
 const text = document.querySelector('.text');
 
-text.style.color = "rgb(222, 228, 47)";
+// text.style.color = "rgb(222, 228, 47)";
+text.style.color = "#8EA133";
 text.style.opacity = "0";
+
 
 const positionBackground = (i) => {
     background.style.backgroundPositionY = i + "%";
