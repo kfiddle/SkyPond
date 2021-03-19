@@ -3,11 +3,14 @@ const logo = document.getElementById('skyPondLogo');
 const homePageTitle = document.getElementById('homePage_title');
 const bodyContainer = document.querySelector("body");
 
-let phoneBird = ["26vw", "13vh", "44vw"]
-let mediumBird = ["15vw", "20vh", "48vw"];
+let birdSize = "";
+
+let phoneBird = ["26vw", "15vh", "49vw"]
+let mediumBird = ["15vw", "17vh", "48vw"];
 let hugeBird = ["15vw", "25vh", "48vw"];
 
 let screenWidth = window.innerWidth;
+console.log(screenWidth);
 
 if (screenWidth < 700) {
     bodyContainer.style.marginTop = "40%";
@@ -16,16 +19,19 @@ if (screenWidth < 700) {
     logo.style.width = "36vw";
     homePageTitle.style.fontSize = "9vw";
     placeTheBird(phoneBird);
+    birdSize = "phoneBird";
 
 } else if (screenWidth > 1598) {
     homePageTitle.style.fontSize = "5rem";
     logoContainer.style.marginTop = "100%";
     logoContainer.style.marginBottom = "5%";
     placeTheBird(hugeBird);
+    birdSize = "hugeBird";
 
 } else if (screenWidth > 796 && screenWidth < 1597) {
     logoContainer.style.marginTop = "45%";
     placeTheBird(mediumBird);
+    birdSize = "mediumBird";
 
 } else if (screenWidth > 700 && screenWidth < 796) {
     bodyContainer.style.marginTop = "20%";
