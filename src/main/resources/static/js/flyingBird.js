@@ -13,13 +13,14 @@ function displayBird(frame, leftSpot, bottomSpot) {
 
 
 function fly(index, time) {
+    console.log(birdSize);
     let bottomSpots = [];
 
     for (let i = 0; i < 37; i++) {
         if (birdSize === "phoneBird") {
             bottomSpots[i] = i + 15;
         } else if (birdSize === "mediumBird") {
-            bottomSpots[i] = i + 17;
+            bottomSpots[i] = i + 19;
         } else {
             bottomSpots[i] = i + 25;
         }
