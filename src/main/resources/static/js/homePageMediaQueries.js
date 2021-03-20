@@ -4,9 +4,8 @@ const homePageTitle = document.getElementById('homePage_title');
 const bodyContainer = document.querySelector("body");
 
 
-let birdSize = "";
-
-let phoneBird = ["26vw", "15vh", "49vw", birdSize]
+birdSize = 0;
+let phoneBird = ["26vw", "15vh", "49vw"]
 let mediumBird = ["15vw", "19vh", "48vw"];
 let hugeBird = ["15vw", "25vh", "48vw"];
 
@@ -20,19 +19,19 @@ if (screenWidth < 700) {
     logo.style.width = "36vw";
     homePageTitle.style.fontSize = "9vw";
     placeTheBird(phoneBird);
-    birdSize = "phoneBird";
+    birdSize = 15;
 
 } else if (screenWidth > 1598) {
     homePageTitle.style.fontSize = "5rem";
     logoContainer.style.marginTop = "100%";
     logoContainer.style.marginBottom = "5%";
     placeTheBird(hugeBird);
-    birdSize = "hugeBird";
+    birdSize = 25
 
 } else if (screenWidth > 796 && screenWidth < 1597) {
     logoContainer.style.marginTop = "45%";
     placeTheBird(mediumBird);
-    birdSize = "mediumBird";
+    birdSize = 19;
 
 } else if (screenWidth > 700 && screenWidth < 796) {
     bodyContainer.style.marginTop = "20%";
