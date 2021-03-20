@@ -6,7 +6,7 @@ const bodyContainer = document.querySelector("body");
 
 let birdSize = "";
 
-let phoneBird = ["26vw", "15vh", "49vw"]
+let phoneBird = ["26vw", "15vh", "49vw", birdSize]
 let mediumBird = ["15vw", "19vh", "48vw"];
 let hugeBird = ["15vw", "25vh", "48vw"];
 

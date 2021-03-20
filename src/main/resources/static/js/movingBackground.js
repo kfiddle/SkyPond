@@ -30,19 +30,12 @@ function scrollBackground(index) {
 
 function openWindowListener() {
         window.addEventListener('mousemove', () => {
-            fly(0, 1);
+            fly(0);
             setTimeout(scrollBackground, 1600);
             setTimeout(contactFormFloatUp, 2600);
         }, {once: true});
 }
 
-function removeOpeningListener() {
-    window.removeEventListener('mousemove', ()=> {
-        fly(0, 1);
-        setTimeout(scrollBackground, 1600);
-        setTimeout(contactFormFloatUp, 2600);
-    })
-}
 
 function contactFormFloatUp() {
     contactForm.style.transform = `translateY(-10vh)`;

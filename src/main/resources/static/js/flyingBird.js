@@ -11,7 +11,6 @@ function displayBird(frame, leftSpot, bottomSpot) {
     bird.style.bottom = bottomSpot + "vh";
 }
 
-
 function fly(index, time) {
     console.log(birdSize);
     let bottomSpots = [];
@@ -34,4 +33,6 @@ function fly(index, time) {
 
     }
 }
+
+
 
