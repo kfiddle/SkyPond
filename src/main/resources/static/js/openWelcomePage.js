@@ -6,7 +6,7 @@ const hoverLogo = document.getElementById('homePage');
 setTimeout(() => {
     darkenBackground(1);
     glowingLogo(1);
-}, 2000);
+}, 5000);
 
 
 function darkenBackground(startingOpacity) {
