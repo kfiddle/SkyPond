@@ -10,12 +10,10 @@
 
 <h1>All the cool kids will be listed here...</h1>
 
-<ul th:each = "customer: ${allCustomers}">
-    <li th:text ="${customer.firstName}"></li>
-    <li th:text = "${customer.lastName}"></li>
-    <li th:text = "${customer.phoneNumber}"></li>
-
-
+<ul th:each="customer: ${allCustomers}">
+    <li th:text="${customer.firstName}"></li>
+    <li th:text="${customer.lastName}"></li>
+    <li th:text="${customer.phoneNumber}"></li>
 
 </ul>
 

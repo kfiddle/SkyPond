@@ -13,34 +13,36 @@ textElements.forEach(element=> {
     element.style.fontWeight = "700";
 })
 
-// text.style.color = "#8EA133";
-// button.style.color = "#8EA133";
-// text.style.opacity = "0";
-// button.style.opacity = "0";
+setTimeout(openWindowListener, 2300);
 
 const positionBackground = (i) => {
     background.style.backgroundPositionY = i + "%";
 }
 
-
-const scrollBackground = () => {
-    for (let i = 1; i < 105; i++) {
-        setTimeout(positionBackground, i * 10, i);
-
+function scrollBackground(index) {
+    setTimeout(positionBackground, index * 10, index);
+    index++;
+    if (index < 105) {
+        scrollBackground(index);
     }
 }
 
 
-hoverLogo.addEventListener('click', () => {
-    console.log(birdSize);
-    fly(0, 1);
+function openWindowListener() {
+        window.addEventListener('mousemove', () => {
+            fly(0, 1);
+            setTimeout(scrollBackground, 1600);
+            setTimeout(contactFormFloatUp, 2600);
+        }, {once: true});
+}
 
-    setTimeout(scrollBackground, 1600);
-
-    setTimeout(contactFormFloatUp, 2600);
-
-
-});
+function removeOpeningListener() {
+    window.removeEventListener('mousemove', ()=> {
+        fly(0, 1);
+        setTimeout(scrollBackground, 1600);
+        setTimeout(contactFormFloatUp, 2600);
+    })
+}
 
 function contactFormFloatUp() {
     contactForm.style.transform = `translateY(-10vh)`;
@@ -75,6 +77,8 @@ function glowingLetters(startingOpacity) {
         glowingLetters(startingOpacity);
     }
 }
+
+
 
 
 //         *****leaving original hoverlogo eventlistener below, just in case*****

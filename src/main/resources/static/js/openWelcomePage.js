@@ -1,9 +1,13 @@
+console.log(document.getElementById("one"));
 
 const background = document.getElementById('bgImage');
 const hoverLogo = document.getElementById('homePage');
 
-darkenBackground(1);
-glowingLogo(1);
+setTimeout(() => {
+    darkenBackground(1);
+    glowingLogo(1);
+}, 2000);
+
 
 function darkenBackground(startingOpacity) {
     setTimeout(() => {
@@ -26,4 +30,13 @@ function glowingLogo(startingOpacity) {
         glowingLogo(startingOpacity);
     }
 }
+
+
+
+
+
+
+
+
+
 
