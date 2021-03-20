@@ -13,7 +13,15 @@ textElements.forEach(element=> {
     element.style.fontWeight = "700";
 })
 
+mobileCarrot.addEventListener('click', ()=> {
+    fly(0);
+    setTimeout(scrollBackground, 1600);
+    setTimeout(contactFormFloatUp, 2600);
+}, {once: true});
+
+
 setTimeout(openWindowListener, 2300);
+
 
 const positionBackground = (i) => {
     background.style.backgroundPositionY = i + "%";
@@ -41,7 +49,7 @@ function contactFormFloatUp() {
     contactForm.style.transform = `translateY(-10vh)`;
     body.style.overflow = "none";
     darkenLogoAndBird(1);
-    glowingLetters(1);
+    setTimeout(glowingLetters, 300, 1);
 }
 
 function darkenLogoAndBird(startingOpacity) {
