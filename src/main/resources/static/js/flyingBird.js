@@ -6,7 +6,7 @@ const flyingLoop = [1, 2, 3, 4, 5, 6, 7, 8,
     9, 10, 11, 12, 9, 10, 11, 12, 9, 10, 11, 12, 9, 10, 11, 12, 9, 10, 11, 12];
 
 function displayBird(frame, leftSpot, bottomSpot) {
-    bird.setAttribute("src", "images/flyingBird/heron_inFlight-" + frame + ".png");
+    bird.src = "images/flyingBird/heron_inFlight-" + frame + ".png";
     bird.style.left = leftSpot + "vw";
     bird.style.bottom = bottomSpot + "vh";
 }
