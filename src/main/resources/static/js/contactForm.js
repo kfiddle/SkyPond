@@ -1,6 +1,5 @@
 const button = document.getElementById('button');
 const phone = document.getElementById('phone');
-// const thankYouBox = document.getElementById("thankYouContainer");
 let displayedNumber = "";
 
 const validEntry = (event) => {
@@ -61,17 +60,7 @@ const phoneFormatter2 = (event) => {
 //     thankYouBox.style.height = i + "px";
 // }
 
-// const openThankYouBox = (firstName) => {
-//     thankYouBox.classList.remove('hidden');
-//     let thankYouStatement = document.createElement('h2');
-//     thankYouStatement.innerHTML = firstName + ", thank you for submitting our customer form. You're an ok person.";
-//     thankYouBox.appendChild(thankYouStatement);
-//
-//     for (let i = 1; i < 300; i++) {
-//         setTimeout(scrollToThankYouBox, 5 * i, i);
-//     }
-//
-// }
+
 
 const submitCustomer = () => {
 
