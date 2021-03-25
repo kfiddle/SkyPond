@@ -2,10 +2,9 @@ const header = document.getElementById('header');
 const contactForm = document.getElementById("contactFormContainer");
 const body = document.querySelector("body");
 const text = document.querySelector(".text");
-const nav1 = document.getElementById("nav1");
-const nav2 = document.getElementById("nav2");
-const textElements = [button, text, nav1, nav2];
-console.log(textElements);
+
+const textElements = [button, text];
+
 
 textElements.forEach(element=> {
     element.style.color = "#8EA133";
@@ -38,7 +37,7 @@ function openWindowListener() {
 
 
 function contactFormFloatUp() {
-    contactForm.style.transform = `translateY(-10vh)`;
+    contactForm.style.transform = `translateY(-5vh)`;
     body.style.overflow = "none";
     darkenLogoAndBird(1);
     glowingLetters(1);
