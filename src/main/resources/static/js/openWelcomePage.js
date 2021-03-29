@@ -3,6 +3,8 @@ console.log(document.getElementById("one"));
 const background = document.getElementById('bgImage');
 const hoverLogo = document.getElementById('homePage');
 
+
+
 setTimeout(() => {
     darkenBackground(1);
     glowingLogo(1);
