@@ -3,6 +3,7 @@ const contactForm = document.getElementById("contactFormContainer");
 const body = document.querySelector("body");
 const text = document.querySelector(".text");
 const hoverLogo = document.getElementById('homePage');
+const background = document.getElementById('bgImage');
 
 
 const textElements = [button, text];
@@ -30,7 +31,9 @@ function scrollBackground(index) {
 
 function openWindowListener() {
         window.addEventListener('mousemove', () => {
-            fly(0);
+            setTimeout(()=> {
+                fly(0)
+            }, 50);
             setTimeout(scrollBackground, 1600);
             setTimeout(contactFormFloatUp, 2600);
         }, {once: true});
