@@ -5,11 +5,10 @@ const text = document.querySelector(".text");
 const hoverLogo = document.getElementById('homePage');
 const background = document.getElementById('bgImage');
 
-
 const textElements = [button, text];
 
 textElements.forEach(element=> {
-    element.style.color = "#8EA133";
+    element.style.color = "rgb(159,199,25)";
     element.style.opacity = "0";
     element.style.fontWeight = "700";
 })
@@ -44,7 +43,9 @@ function contactFormFloatUp() {
     contactForm.style.transform = `translateY(-5vh)`;
     body.style.overflow = "none";
     darkenLogoAndBird(1);
-    glowingLetters(1);
+    setTimeout(() => {
+        glowingLetters(1);
+    }, 800);
 }
 
 function darkenLogoAndBird(startingOpacity) {
@@ -63,10 +64,7 @@ function glowingLetters(startingOpacity) {
         textElements.forEach(element=> {
             element.style.opacity = (startingOpacity * 0.01).toString();
             });
-
-        // text.style.opacity = (startingOpacity * 0.01).toString();
-        // button.style.opacity = (startingOpacity * 0.01).toString();
-    }, startingOpacity * 30);
+    }, startingOpacity * 20);
 
     startingOpacity += 1;
     if (startingOpacity <= 100) {

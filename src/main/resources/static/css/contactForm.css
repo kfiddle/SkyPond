@@ -1,6 +1,7 @@
 #contactFormContainer {
     transform: translateY(110vh);
     transition: 2s;
+
 }
 
 #header{
@@ -62,6 +63,7 @@
     margin: 15rem auto 3rem;
     max-width: 60rem;
     width: 100%;
+
 }
 
 .text{
@@ -132,7 +134,7 @@ textarea{
 }
 
 .submit_button{
-    background-color: #3D441E;
+    /*background-color: #3D441E;*/
     width: 50%;
     margin: 0 auto;
 }
@@ -140,7 +142,8 @@ textarea{
 
 
 #button{
-    background-color: #3D441E;
+    /*background-color: #3D441E;*/
+    background-color: transparent;
     border: none;
     /*color: #d1d1ab;*/
     cursor: pointer;
