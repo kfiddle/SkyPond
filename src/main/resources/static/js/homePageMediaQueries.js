@@ -5,9 +5,10 @@ const bodyContainer = document.querySelector("body");
 
 
 birdSize = 0;
-let phoneBird = ["26vw", "15vh", "49vw"]
-let mediumBird = ["15vw", "19vh", "48vw"];
-let hugeBird = ["15vw", "25vh", "48vw"];
+
+let phoneBird = ["44vw", "12vh", "43.2vw"];
+let mediumBird = ["17vw", "19vh", "47.7vw"];
+let hugeBird = ["15vw", "25vh", "48.5vw"];
 
 let screenWidth = window.innerWidth;
 console.log(screenWidth);
@@ -30,6 +31,7 @@ if (screenWidth < 700) {
 
 } else if (screenWidth > 796 && screenWidth < 1597) {
     logoContainer.style.marginTop = "45%";
+    console.log("mediumish");
     placeTheBird(mediumBird);
     birdSize = 19;
 
