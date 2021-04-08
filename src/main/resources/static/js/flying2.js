@@ -10,7 +10,6 @@ function displayBird(frame) {
     bird.style.bottom = (frame + birdSize) + "vh";
 
     frame++;
-    console.log(frame);
 
     if (frame < 29) {
         setTimeout(displayBird, 80, frame);
