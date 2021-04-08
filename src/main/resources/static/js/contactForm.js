@@ -21,7 +21,6 @@ const displayEntry = (event) => {
     phone.value = displayedNumber;
 }
 
-
 const verifyNumber = (event) => {
     isNaN(event.key) && event.keyCode !== 8 && event.keyCode !== 189 ?
         phone.value = phone.value.slice(0, -1) : displayEntry(event)
