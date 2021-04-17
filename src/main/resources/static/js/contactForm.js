@@ -2,64 +2,29 @@ const button = document.getElementById('button');
 const phone = document.getElementById('phone');
 let displayedNumber = "";
 
-const validEntry = (event) => {
+const displayEntry = (event) => {
     displayedNumber = phone.value;
     let key = event.keyCode;
     let currentLength = displayedNumber.length;
 
     if (key === 8 && currentLength === 4) {
-        displayedNumber = displayedNumber.substring(1, displayedNumber.length);
-    }
-
-    else if (key === 8 && currentLength === 10) {
-        displayedNumber = displayedNumber.substring(0, displayedNumber.length - 1);
-    }
-
-    else if (currentLength === 3) {
-        displayedNumber = '(' + displayedNumber + ') ';
-    }
-
-    else if (currentLength === 9) {
-        displayedNumber = displayedNumber + '-';
-    }
-
-    else if (currentLength === 15) {
-        displayedNumber = displayedNumber.substring(0, phone.value.length - 1);
-
+        displayedNumber = displayedNumber.slice(1, -1);
+    } else if (key === 8 && currentLength === 9) {
+        displayedNumber = displayedNumber.slice(0, -1);
+    } else if (currentLength === 3) {
+        displayedNumber = `(${displayedNumber})`
+    } else if (currentLength === 8) {
+        displayedNumber += '-';
+    } else if (currentLength === 14) {
+        displayedNumber = displayedNumber.slice(0, -1);
     }
     phone.value = displayedNumber;
 }
 
-
-const phoneFormatter2 = (event) => {
-    let key = event.keyCode;
-    let numbers, backspace, dash;
-
-    if ((key > 47 && key < 58) || (key > 95 && key < 106)) {
-        numbers = true;
-    }
-
-    if (key === 8) {
-        backspace = true;
-    }
-
-    if (key === 189) {
-        dash = true;
-    }
-
-    if (!numbers && !backspace && !dash) {
-        phone.value = phone.value.substring(0, phone.value.length - 1);
-    } else {
-        validEntry(event);
-    }
-
-
+const verifyNumber = (event) => {
+    isNaN(event.key) && event.keyCode !== 8 && event.keyCode !== 189 ?
+        phone.value = phone.value.slice(0, -1) : displayEntry(event)
 }
-
-// const scrollToThankYouBox = (i) => {
-//     thankYouBox.style.height = i + "px";
-// }
-
 
 
 const submitCustomer = () => {
@@ -95,9 +60,36 @@ const submitCustomer = () => {
 
 
 phone.addEventListener('keyup', () => {
-    phoneFormatter2(event);
+    verifyNumber(event);
 });
 button.addEventListener('click', submitCustomer);
+
+
+
+// const phoneFormatter = (event) => {
+//     let key = event.keyCode;
+//     let numbers, backspace, dash;
+//
+//     if ((key > 47 && key < 58) || (key > 95 && key < 106)) {
+//         numbers = true;
+//     }
+//
+//     if (key === 8) {
+//         backspace = true;
+//     }
+//
+//     if (key === 189) {
+//         dash = true;
+//     }
+//
+//     if (!numbers && !backspace && !dash) {
+//         phone.value = phone.value.substring(0, phone.value.length - 1);
+//     } else {
+//         validEntry(event);
+//     }
+// }
+
+
 
 /*
 the "sort of" phone formatters below. They don't work well enough as is.
