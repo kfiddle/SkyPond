@@ -13,7 +13,7 @@ textElements.forEach(element=> {
     element.style.fontWeight = "700";
 })
 
-setTimeout(openWindowListener, 2300);
+setTimeout(openWindowListener, 1500);
 
 const positionBackground = (i) => {
     background.style.backgroundPositionY = i + "%";
@@ -31,7 +31,9 @@ function scrollBackground(index) {
 function openWindowListener() {
         window.addEventListener('mousemove', () => {
             setTimeout(()=> {
-                fly(0)
+                // fly(0)
+
+                fly2();
             }, 50);
             setTimeout(scrollBackground, 1600);
             setTimeout(contactFormFloatUp, 2600);
@@ -73,17 +75,3 @@ function glowingLetters(startingOpacity) {
 }
 
 
-
-
-//         *****leaving original hoverlogo eventlistener below, just in case*****
-
-// hoverLogo.addEventListener('click', () => {
-//     background.style.position = "relative";
-//     background.style.backgroundRepeat = "no-repeat";
-//
-//
-//     setTimeout(scrollBackground, 1000);
-//     setTimeout(switchToContactPage, 2000);
-//
-//
-// });
