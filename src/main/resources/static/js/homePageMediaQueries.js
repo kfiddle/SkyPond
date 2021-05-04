@@ -9,7 +9,7 @@ let hugeBird = ["15vw", "17vh", "47.6vw"];
 let bigMediumBird = ["15vw", "23vh", "47.7vw"];
 let smallMediumBird = ["15vw", "20vh", "47.7vw"];
 let bigTabletBird = ["15vw", "19vh", "47.7vw"]
-let phoneBird = ["44vw", "10vh", "43.2vw"];
+let phoneBird = ["36vw", "14.5vh", "37.4vw"];
 
 let screenWidth = window.innerWidth;
 let screenHeight = window.innerHeight;
@@ -76,17 +76,17 @@ if (screenSize.huge) {
 
 
 
-else if (screenWidth < 700) {
-    bodyContainer.style.marginTop = "40%";
-    logoContainer.classList.remove('homePage');
-    logoContainer.classList.add('homePageMobileOnly');
-    logo.style.width = "36vw";
-    homePageTitle.style.fontSize = "9vw";
-
-    placeTheBird(phoneBird);
-    birdSize = 12;
-
-}
+// else if (screenWidth < 700) {
+//     bodyContainer.style.marginTop = "40%";
+//     logoContainer.classList.remove('homePage');
+//     logoContainer.classList.add('homePageMobileOnly');
+//     logo.style.width = "36vw";
+//     homePageTitle.style.fontSize = "9vw";
+//
+//     placeTheBird(phoneBird);
+//     birdSize = 12;
+//
+// }
 
 
 function placeTheBird(screenBirds) {
