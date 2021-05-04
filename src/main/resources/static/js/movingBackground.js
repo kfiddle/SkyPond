@@ -4,6 +4,8 @@ const body = document.querySelector("body");
 const text = document.querySelector(".text");
 const hoverLogo = document.getElementById('homePage');
 const background = document.getElementById('bgImage');
+const bird = document.getElementById('bird');
+
 
 const textElements = [button, text];
 
@@ -31,8 +33,6 @@ function scrollBackground(index) {
 function openWindowListener() {
         window.addEventListener('mousemove', () => {
             setTimeout(()=> {
-                // fly(0)
-
                 fly2();
             }, 50);
             setTimeout(scrollBackground, 1600);
