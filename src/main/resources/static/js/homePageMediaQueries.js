@@ -74,21 +74,6 @@ if (screenSize.huge) {
     birdSize = 19;
 }
 
-
-
-// else if (screenWidth < 700) {
-//     bodyContainer.style.marginTop = "40%";
-//     logoContainer.classList.remove('homePage');
-//     logoContainer.classList.add('homePageMobileOnly');
-//     logo.style.width = "36vw";
-//     homePageTitle.style.fontSize = "9vw";
-//
-//     placeTheBird(phoneBird);
-//     birdSize = 12;
-//
-// }
-
-
 function placeTheBird(screenBirds) {
     bird.style.width = screenBirds[0];
     bird.style.bottom = screenBirds[1];
