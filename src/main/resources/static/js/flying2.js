@@ -5,7 +5,7 @@ let bottomPosition = birdSize;
 function fly2() {
 
     function placeTheBird() {
-        setTimeout(()=> {
+        setTimeout(() => {
             whichHeron++;
             leftPosition += 2;
             bottomPosition++;
@@ -15,14 +15,19 @@ function fly2() {
             }
 
             bird.src = 'images/flyingBird/heron_inFlight-' + whichHeron + '.png';
-            bird.style.left = leftPosition + 'vw';
-            bird.style.bottom = bottomPosition + 'vh';
 
             requestAnimationFrame(fly2);
-        }, 80);
+        }, 50);
 
     }
 
     requestAnimationFrame(placeTheBird);
+}
+
+function fly3() {
+
+    bird.style.transform = 'translate(40vw, -100px)';
+
+
 }
 

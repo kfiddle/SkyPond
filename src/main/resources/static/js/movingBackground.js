@@ -34,6 +34,7 @@ function openWindowListener() {
         window.addEventListener('mousemove', () => {
             setTimeout(()=> {
                 fly2();
+                fly3();
             }, 50);
             setTimeout(scrollBackground, 1600);
             setTimeout(contactFormFloatUp, 2600);
